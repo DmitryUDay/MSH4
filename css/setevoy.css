@@ -1,0 +1,42 @@
+.bb{
+    background-color: #ffd231;
+    font-size: 30px;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    width: 80%;
+    transition: all 0.2s ease;
+}
+
+.boni {
+    animation: bounce 500ms ease-in-out;
+}
+
+@keyframes bounce {
+
+    33.333% {
+        transform: translateY(-30px);
+    }
+    66.666% {
+        transform: translateY(15px);
+    }
+    83.333% {
+        transform: translateY(-7.5px);
+    }
+    91.666% {
+        transform: translateY(3.75px);
+    }
+    95.833% {
+        transform: translateY(-1.875px);
+    }
+    98.4375% {
+        transform: translateY(0.9375px);
+    }
+    99.21875% {
+        transform: translateY(-0.46875px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

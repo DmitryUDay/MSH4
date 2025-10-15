@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #1E88E5;
+    --primary-dark: #0D47A1;
+    --primary-light: #BBDEFB;
+    --secondary-color: #43A047;
+    --accent-color: #FF9800;
+    --text-color: #333333;
+    --light-text: #FFFFFF;
+    --bg-color: #F9F9F9;
+    --card-bg: #FFFFFF;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+
+/* Контакты */
+.contacti {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+  padding: 40px 20px;
+  border-radius: var(--border-radius);
+  margin: 30px 0;
+}
+
+.cardSoc {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  width: 200px;
+}
+
+.cardSoc:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.cardSoc img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cardAp {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin: 20px 0;
+}
+
+.cardAp img {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Футер */
+footer {
+  background-color: #263238;
+  color: #b4b4b4;
+  padding: 40px 5%;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #b4b4b4;
+  transition: var(--transition);
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* Анимации */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.button-push-animation {
+  animation: pushEffect 0.3s ease-out;
+}
+
+@keyframes pushEffect {
+  0% {
+    transform: translateY(-50%) translateX(0);
+  }
+  25% {
+    transform: translateY(-50%) translateX(-8px);
+  }
+  75% {
+    transform: translateY(-50%) translateX(8px);
+  }
+  100% {
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+/* Выпадающие меню */
+.hoveradje {
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.hoveradje:hover {
+  background-color: var(--primary-dark);
+}
+
+.content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  box-shadow: var(--shadow);
+  min-width: 200px;
+  z-index: 100;
+}
+
+.hoveradje:hover .content {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.content a {
+  display: block;
+  padding: 10px;
+  color: var(--text-color);
+  border-radius: 4px;
+}
+
+.content a:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .textWal {
+    font-size: 2.5rem;
+  }
+  
+  .blockCard {
+    width: 240px;
+  }
+}
+
+@media (max-width: 992px) {
+  .image {
+    height: 400px;
+  }
+  
+  .blockCard {
+    width: 200px;
+    height: 320px;
+  }
+  
+  .blockCard img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .NaviBar {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .image {
+    height: 300px;
+  }
+  
+  .textWal {
+    font-size: 2rem;
+  }
+  
+  .blockCard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .image {
+    height: 250px;
+  }
+  
+  .textWal {
+    font-size: 1.5rem;
+  }
+  
+  .cardAp {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .cardAp img {
+    margin-bottom: 20px;
+  }
+}

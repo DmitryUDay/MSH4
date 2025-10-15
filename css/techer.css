@@ -1,0 +1,32 @@
+.searcher{
+    display: flex;
+    align-items: center;
+}
+
+.searcher input{
+    height: 30px;
+}
+
+.cardTe{
+    display: flex;
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.star{
+    color: rgb(255, 140, 0);
+}
+
+p{
+    font-size: 25px;
+}
+
+li{
+    font-size: 20px;
+}
+
+.ahtung{
+    text-decoration: none;
+    color: #43A047;
+}

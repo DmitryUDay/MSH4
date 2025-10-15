@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontStyle.css">
+    <link rel="stylesheet" href="css/setevoy.css">
+</head>
+<body>
+    
+    <div style="text-align: center;">
+        <h1>Ой, произошел конфликт с сайтом Сетевой Город. Образование</h1>
+        <h3>Удовкин уже устраняет эту проблему. Возвращайтесь через 5 минут</h3>
+        <img src="img/error.png" alt="Удовкин чинит сайт" width="40%" style="border-radius: 20px;">
+
+        <button class="bb">Назад</button>
+    </div>
+
+
+
+<script>
+    document.querySelector('.bb').addEventListener('click', function() {
+    this.classList.add('boni');
+
+    // Ждем окончания анимации и переходим на сайт
+    setTimeout(() => {
+        history.back();
+    }, 1000); // Время ожидания должно соответствовать длительности анимации
+});
+</script>
+
+</body>
+</html>
