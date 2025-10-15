@@ -3,90 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Учителя</title>
     <link rel="stylesheet" href="css/techer.css">
     <link rel="stylesheet" href="fontStyle.css">
     <link rel="stylesheet" href="naviBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
-    <div class="NaviBar" style="display: flex; justify-content: space-between;">
-        <a href="index.html">
-            <div style="width: 100px; height: 50px; background-color: gray; text-align: center;">
-                <p>LOGO</p>
-            </div>
-        </a>
-        <div style="display: flex; align-items: center; margin-left: 200px; gap: 50px;">            
-                <a href="index.html"><h3>Главная</h3></a>
-            
-                <h3 style="font-size: 30px; color: #2962FF;">Учителя школы</h3>
+    <nav>
+        <a href="index.html"><i class="fas fa-house" style="color: black;"></i><p>Домой</p></a>
+        <a href="teatcher.html" class="activete"><i class="fas fa-chalkboard-teacher" style="color: black;"></i><p>Педагоги</p></a>
+        <a href="contact.html"><i class="fas fa-phone" style="color: black;"></i><p>Контакты</p></a>
+    </nav>
 
-                <a href="index.html"><h3>Вакансии</h3></a>
-            
-        </div>
-
-        
-        <div style="display: flex; gap: 30px;">
-            <div class="searcher">
-                <input type="text" placeholder="Найти учителя" >
-                <img src="img/icons/search.png" alt="" width="30px" height="30px" style="margin-left: 10px; cursor: pointer;" onclick="shower()">   
-            </div>  
-    
-            <div style="background-color: #1E88E5; color: #FFFFFF; display: flex; padding: 5px; margin-right: 15px; height: 50px; align-items: center; border-radius: 10px;">
-                <img src="img/userIcon.png" alt="" width="50px" height="50px">
-                <h2>Гость</h2>
-            </div>
+    <nav style="position: static; visibility: hidden; ">
+        <a href="#about"><img src="https://cdn-icons-png.flaticon.com/512/447/447057.png" alt="" width="20px"><p>Сведения</p></a>
+        <a href="#about"><img src="https://cdn-icons-png.flaticon.com/512/54/54647.png" alt="" width="20px"><p>Педагоги</p></a>
+        <a href="#about"><img src="https://cdn-icons-png.flaticon.com/512/15/15407.png" alt="" width="20px"><p>Контакты</p></a>
+    </nav>
+    <!-- модалка -->
+    <div id="teacher-modal" class="teacher-modal">
+    <div class="teacher-modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-img" src="" alt="">
+        <div class="modal-info">
+        <h2 id="modal-name"></h2>
+        <p id="modal-role"></p>
+        <p id="modal-tip"></p>
+        <p id="modal-date"></p>
+        <p id="modal-phone"></p>
+        <blockquote id="modal-quote"></blockquote>
         </div>
     </div>
-
-    <br><br><br><br><br><br><br>
-
-    <div style="margin-right: 20px; margin-left: 20px;">
-
-
-<!-- ★ ☆  -->
-
-        <h1 align="center">База педагогического состава Школы МБОУ СОШ №4 им. Ж. Макеевой на 14.05.2025</h1>
-        <a href="defoultSelf.html" class="ahtung"><p align="center">Исправить неточность или добавить информацию?</p></a>
-
-
-
-        <div class="cardTe">
-            <img src="img/noPhoto.png" alt="" width="20%">
-            <div style="margin-left: 10px;">
-                <div style="display: flex; gap: 20px; align-items: center;"><img src="img/icons/user.png" alt="" width="5%" height="5%"><h1>Щербина Мария Сергеевна</h1></div>
-                <p>Категория предмета: Математика</p>
-                <div style="display: flex; gap: 20px; align-items: center;"><img src="img/icons/books.png" alt="" width="5%" height="5%"><h3>Алгебра, Геометрия, Информатика, Вероятность и стат.(Математика)</h3></div>
-                <p>Дата рождения: (предпочитает скрыть)</p>
-                <li>Педагогический стаж: 1 год</li>
-                <li>В МБОУСОШ 4 имени Ж. Макеевой с 2024 года</li>
-                <!-- <div style="display: flex; align-items: center;"> -->
-                    <div style="display: flex; gap: 20px; align-items: center;"><img src="img/icons/statisty.png" alt="" width="5%" height="5%"><p>Общий рейтинг:</p><p class="star">★★★★★</p></div>
-                    
-                <!-- </div> -->
-
-            </div>
-        </div>
-
-        <br><hr><br>
-
-        <div class="cardTe">
-            <img src="img/noPhoto.png" alt="" width="20%">
-            <div style="margin-left: 10px;">
-                <div style="display: flex; gap: 20px; align-items: center;"><img src="img/icons/user.png" alt="" width="5%" height="5%"><h1>Борисова Татьяна Генадьевна</h1></div>
-                <p>Категория предмета: Иностранный язык</p>
-                <div style="display: flex; gap: 20px; align-items: center;"><img src="img/icons/books.png" alt="" width="5%" height="5%"><h3>Английский язык, немецкий язык</h3></div>
-                <p>Дата рождения: (предпочитает скрыть)</p>
-                <li>Педагогический стаж: 18 лет</li>
-                <li>В МБОУСОШ 4 имени Ж. Макеевой с 2007 года</li>
-                    <div style="display: flex; gap: 20px; align-items: center;"><img src="img/icons/statisty.png" alt="" width="5%" height="5%"><p>Общий рейтинг:</p><p class="star">★★★★★</p></div>
-
-            </div>
-        </div>
-
-
     </div>
 
+    <br>
+
+    <h1 class="title">Наши учителя</h1>
+    <div id="teachers-container" class="teachers"></div>
+
+
+
+
+<script>
+    function getAgeText(yearInput) {
+        const year = Number(yearInput);
+        if (!Number.isFinite(year)) return '';
+        const currentYear = new Date().getFullYear();
+        const diff = currentYear - year;
+        if (diff < 0) return 'в будущем';
+        if (diff === 0) return 'меньше года';
+        if (diff === 1) return '1 год';
+        const mod10 = diff % 10;
+        const mod100 = diff % 100;
+        if (mod100 >= 11 && mod100 <= 14) return `${diff} лет`;
+        if (mod10 >= 2 && mod10 <= 4) return `${diff} года`;
+        return `${diff} лет`;
+        }
+
+        fetch('teatcher.json')
+        .then(res => res.json())
+        .then(data => {
+        const container = document.getElementById('teachers-container');
+        data.forEach(teacher => {
+            const card = document.createElement('div');
+            card.classList.add('teacher-card');
+            card.innerHTML = `
+            <img src="${teacher.img}" alt="${teacher.name}">
+            <div class="teacher-info">
+                <h3>${teacher.name}</h3>
+                <p><strong>${teacher.dolj}:</strong> ${teacher.role}</p>
+                <p><strong>Должность:</strong> ${teacher.tip}</p>
+                <p class="date"><strong>Работает с:</strong> ${teacher.god} ≈ ${getAgeText(teacher.god)}</p>
+            </div>
+            `;
+            card.addEventListener('click', () => openModal(teacher));
+            container.appendChild(card);
+        });
+        })
+        .catch(err => console.error('Ошибка при загрузке данных:', err));
+
+        /* ======== Модальное окно ======== */
+        const modal = document.getElementById('teacher-modal');
+        const closeBtn = modal.querySelector('.close');
+
+        function openModal(teacher) {
+            modal.querySelector('#modal-img').src = teacher.img;
+            modal.querySelector('#modal-name').textContent = teacher.name;
+            modal.querySelector('#modal-role').textContent = `${teacher.dolj}: ${teacher.role}`;
+            modal.querySelector('#modal-tip').textContent = `Должность: ${teacher.tip}`;
+            modal.querySelector('#modal-date').textContent = `Работает с ${teacher.god} — ${getAgeText(teacher.god)}`;
+            modal.querySelector('#modal-phone').textContent = teacher.phone ? `Телефон: ${teacher.phone}` : '';
+            modal.querySelector('#modal-quote').textContent = teacher.quote || '';
+            modal.classList.add('show');
+        }
+
+        function closeModal() { modal.classList.remove('show'); }
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+</script>
 
 
 </body>

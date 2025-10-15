@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="naviBar.css">
+<link rel="stylesheet" href="fontStyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <title>МБОУ СОШ №4 имени Жени Макеевой</title>
 
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
 <nav>
     <a href="#about"><i class="fas fa-info-circle" style="color: black;"></i><p>Сведения</p></a>
     <a href="teatcher.html"><i class="fas fa-chalkboard-teacher" style="color: black;"></i><p>Педагоги</p></a>
-    <a href="defoultSelf.html"><i class="fas fa-phone" style="color: black;"></i><p>Контакты</p></a>
+    <a href="contact.html"><i class="fas fa-phone" style="color: black;"></i><p>Контакты</p></a>
 </nav>
 
 <nav style="position: static; visibility: hidden; ">
@@ -27,7 +27,7 @@
 
 <header>
     <img src="https://nsportal.ru/sites/default/files/2012/11/15/risunok5_5.jpg" alt="Школа">
-    <h1>МБОУ СОШ №4 имени Жени Макеевой</h1>
+    <h1>Добро пожаловать в школу №4 имени Жени Макеевой</h1>
     <p>Кропоткин, Шаумяна 17А</p>
     <button class="btn">Узнать больше</button>
 </header>
@@ -112,6 +112,27 @@
     </table>
 </section>
 
+<section id="about">
+    <h2>Полезные материалы</h2>
+    <div class="cards-container">
+        <div class="card">
+            <a href="https://www.gosuslugi.ru/600426/1/form">
+                <i class="fas fa-child"></i>
+                <h3>Записать ребенка в школу</h3>
+                <p>Запишите ребенка в школу через портал гос услуг</p>
+            </a>
+        </div>
+        <div class="card">
+            <i class="fas fa-clock"></i>
+            <h3>Режим работы</h3>
+            <p>Понедельник — Пятница: 8:30 до 17:30<br>
+            Суббота: 8:30 до 15:00<br>
+            Воскресенье: выходной</p>
+        </div>
+    </div>
+</section>
+
+
 
 
 
@@ -170,58 +191,37 @@
     </div>
 </section>
 
+<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/srednyaya_obshcheobrazovatelnaya_shkola_4_imeni_zh_makeyevoy/127887923190/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/10996/kropotkin/category/school/184106240/?utm_medium=mapframe&utm_source=maps" style="color:#ffffff;font-size:12px;position:absolute;top:14px;"></a><iframe src="https://yandex.ru/map-widget/v1/?ll=40.591598%2C45.436887&mode=search&oid=127887923190&ol=biz&z=16" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative; width: 90%; margin-right: auto; margin-left: auto; display: flex; border: none; background-color: rgb(255, 255, 255); border-radius: 20px; padding: 10px;"></iframe></div>
+
 
 
 
 
 <footer>
-    &copy; 2025 МБОУ СОШ №4 имени Жени Макеевой-проект <a href="https://dmitryuday.github.io/UDay/">UDay</a>
+    <div style="display: flex; justify-content: center;">
+        <div>
+            <h3>Доп. информация</h3>
+            <a href="https://school4-krp.ucoz.ru/bd-2.pdf">Педогогический состав</a>
+        </div>
+        <div>
+            <h3>Документы</h3>
+            <a href="https://school4-krp.ucoz.ru/ustav_2015.pdf">Устав МБОУ СОШ № 4 имени Ж. Макеевой</a>
+            <a href="https://school4-krp.ucoz.ru/pravila_uchashhikhsja.pdf">Изменения в Устав МБОУ СОШ № 4 имени Ж. Макеевой</a>
+            <a href="https://school4-krp.ucoz.ru/bd-2.pdf">Правила внутреннего распорядка обучающихся</a>
+            <a href="https://school4-krp.ucoz.ru/bd-2.pdf">Коллективный договор МБОУ СОШ № 4 имени Ж. Макеевой</a>
+            <a href="https://school4-krp.ucoz.ru/kol-dogovor_v_pdf.pdf">Педогогический состав</a>
+        </div>
+        <div>
+            <h3>Документы</h3>
+            <a href="http://school4-krp.ucoz.ru/index/vakansii/0-49">Вакансии</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    &copy; 2025 МБОУ СОШ №4 имени Жени Макеевой-проект <a href="https://dmitryuday.github.io/UDay/" style="color: black;">UDay</a>
+    <a href="https://school4-krp.ucoz.ru/" style="color: black;">Подробную информацию вы можете посмотреть на сайте</a>
+
 </footer>
-
-
-
-
-
-
-<script>
-const overlay = document.getElementById('overlay');
-const cards = document.querySelectorAll('.caca');
-
-function openCard(card){
-  const open = document.querySelector('.caca.open');
-  if(open && open!==card) closeCard(open);
-  card.classList.add('open');
-  overlay.classList.add('show');
-  document.body.style.overflow='hidden';
-}
-
-function closeCard(card){
-  card.classList.remove('open');
-  overlay.classList.remove('show');
-  document.body.style.overflow='';
-}
-
-cards.forEach(card=>{
-  const closeBtn = card.querySelector('.close-btn');
-  card.addEventListener('click',(e)=>{
-    if(e.target===closeBtn) return;
-    if(!card.classList.contains('open')) openCard(card);
-  });
-  closeBtn.addEventListener('click',()=>closeCard(card));
-});
-
-overlay.addEventListener('click',()=>{
-  const open = document.querySelector('.caca.open');
-  if(open) closeCard(open);
-});
-
-document.addEventListener('keydown',(e)=>{
-  if(e.key==='Escape'){
-    const open = document.querySelector('.caca.open');
-    if(open) closeCard(open);
-  }
-});
-</script>
 
 </body>
 </html>
